@@ -144,7 +144,7 @@ public void shardingJobHandler() {
 ## 依赖版本
 
 - Spring Boot: 2.3.7.RELEASE
-- XXL-Job: 2.3.1
+- XXL-Job: 2.4.2
 - Java: 8+
 
 ## 参考资源

@@ -178,7 +178,7 @@ mvn spring-boot:run
 
 - Spring Boot 2.3.7.RELEASE
 - Spring AOP（用于日志切面）
-- XXL-Job 2.3.1（分布式任务调度）
+- XXL-Job 2.4.2（分布式任务调度）
 - SLF4J（日志接口）
 - Maven（构建工具）
 

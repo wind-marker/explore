@@ -21,7 +21,7 @@ docker run -d \
   -e PARAMS="--spring.datasource.url=jdbc:mysql://host.docker.internal:3306/xxl_job?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai \
   --spring.datasource.username=root \
   --spring.datasource.password=root" \
-  xuxueli/xxl-job-admin:2.3.1
+  xuxueli/xxl-job-admin:2.4.2
 ```
 
 如果不使用 MySQL，可以使用内存数据库（仅用于测试）：
@@ -30,7 +30,7 @@ docker run -d \
 docker run -d \
   --name xxl-job-admin \
   -p 8080:8080 \
-  xuxueli/xxl-job-admin:2.3.1
+  xuxueli/xxl-job-admin:2.4.2
 ```
 
 #### 方式二：下载源码部署
