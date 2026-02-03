@@ -1,0 +1,26 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: xxl-job-demo
+
+# XXL-Job 配置
+xxl:
+  job:
+    enabled: true                                      # 是否启用 XXL-Job
+    admin-addresses: http://localhost:8080/xxl-job-admin  # 调度中心地址
+    executor:
+      appname: xxl-job-executor-demo                   # 执行器 AppName（在调度中心注册时使用）
+      port: 9999                                       # 执行器端口号
+      log-path: ./logs/xxl-job/jobhandler             # 日志文件存储路径
+      log-retention-days: 30                           # 日志保留天数
+      # access-token:                                  # 访问令牌（可选，如果调度中心设置了 token，这里也需要配置）
+
+# 日志配置
+logging:
+  level:
+    com.clx.learn: INFO
+    com.xxl.job: INFO
+  pattern:
+    console: '%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n'

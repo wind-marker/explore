@@ -10,6 +10,8 @@
     <packaging>pom</packaging>
     <modules>
         <module>simple-log-starter</module>
+        <module>xxl-job-starter</module>
+        <module>xxl-job-demo</module>
     </modules>
 
     <parent>
