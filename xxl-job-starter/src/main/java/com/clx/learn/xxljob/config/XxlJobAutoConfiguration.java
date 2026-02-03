@@ -40,12 +40,12 @@ public class XxlJobAutoConfiguration {
         xxlJobSpringExecutor.setAppname(properties.getExecutor().getAppname());
         
         // 配置执行器注册地址（可选）
-        if (properties.getExecutor().getAddress() != null && !properties.getExecutor().getAddress().isEmpty()) {
+        if (properties.getExecutor().getAddress() != null && !properties.getExecutor().getAddress().trim().isEmpty()) {
             xxlJobSpringExecutor.setAddress(properties.getExecutor().getAddress());
         }
         
         // 配置执行器 IP（可选）
-        if (properties.getExecutor().getIp() != null && !properties.getExecutor().getIp().isEmpty()) {
+        if (properties.getExecutor().getIp() != null && !properties.getExecutor().getIp().trim().isEmpty()) {
             xxlJobSpringExecutor.setIp(properties.getExecutor().getIp());
         }
         
@@ -53,7 +53,7 @@ public class XxlJobAutoConfiguration {
         xxlJobSpringExecutor.setPort(properties.getExecutor().getPort());
         
         // 配置访问令牌（可选）
-        if (properties.getExecutor().getAccessToken() != null && !properties.getExecutor().getAccessToken().isEmpty()) {
+        if (properties.getExecutor().getAccessToken() != null && !properties.getExecutor().getAccessToken().trim().isEmpty()) {
             xxlJobSpringExecutor.setAccessToken(properties.getExecutor().getAccessToken());
         }
         

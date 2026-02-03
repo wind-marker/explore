@@ -18,7 +18,7 @@
 docker run -d \
   --name xxl-job-admin \
   -p 8080:8080 \
-  -e PARAMS="--spring.datasource.url=jdbc:mysql://host.docker.internal:3306/xxl_job?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai \
+  -e PARAMS="--spring.datasource.url=jdbc:mysql://host.docker.internal:3306/xxl_job?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai \
   --spring.datasource.username=root \
   --spring.datasource.password=root" \
   xuxueli/xxl-job-admin:2.3.1
